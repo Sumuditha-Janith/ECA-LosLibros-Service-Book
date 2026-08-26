@@ -3,8 +3,8 @@ spring:
     name: book-service
 
   config:
-    import: "configserver:"
+    import: "optional:configserver:"
 
   cloud:
     config:
-      uri: http://config.platform:9000
+      uri: http://localhost:9000
